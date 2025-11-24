@@ -35,11 +35,8 @@ class LoginPageStateless extends StatelessWidget {
       ScaffoldMessenger.of(context)
           .showSnackBar(const SnackBar(content: Text("Login Successful!")));
 
-    //   Navigator.push(
-    //     context,
-    //     MaterialPageRoute(builder: (_) => const DashboardPage()),
-    //   );
-    // } else {
+
+    } else {
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text(result["message"])));
     }
